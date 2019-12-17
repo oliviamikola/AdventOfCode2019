@@ -119,14 +119,9 @@ def calculate(code: List[str]) -> int:
 
         elif opcode == 99:  # Halt
             # print("Halt")
-            print(code[current_index - 1])
-            print(code[current_index + 1])
             break
 
         else:
-            print(current_index)
-            print(opcode)
-            print(count)
             print("Something went wrong")
             break
 
@@ -144,4 +139,3 @@ data_file.close()
 
 # replace position 1 with the value 12 and replace position 2 with the value 2
 part1 = calculate(deepcopy(data))
-print("Part 1: {}".format(part1))
